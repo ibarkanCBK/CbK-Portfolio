@@ -92,7 +92,7 @@ p{
   font-family: Arial;
 }
 .section{
-  height: 758px;
+  height: 868px;
 }
 #logo{
   padding: 8px 0 0 42px;
@@ -126,11 +126,11 @@ p{
   background-color: #C3BBAB;
 }
 #hobbies{
-  width: 35%;
+  width: 25%;
 }
 #movies{
-  width: 25%;
+  width: 15%;
 }
 #food{
-  width: 25%;
+  width: 15%;
 }
