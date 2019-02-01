@@ -1,0 +1,136 @@
+html{
+  border: 0;
+  padding: 0;
+}
+body{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/*div{
+  border-style: solid;
+  border-width: 2px;
+}*/
+h1{
+  margin: 1px;
+  color: #FFFDF9;
+  font-family: Arial;
+  font-size: 2.2em;
+}
+p{
+  font-family: Arial;
+}
+/*The navigation classes are below*/
+.nav-item {
+  display: inline;
+  padding-right: 4px;
+}
+.nav-link{
+  color: #FFFDF9;
+  font-family: Arial;
+}
+.menu{
+  padding: 8px 30px 8px 0;
+}
+/*The column classes are below*/
+.quarter-column{
+  width: 24.28%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.half-column{
+  width: 49%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.full-column{
+  width: 99.6%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.main-title{
+  padding: 250px 0 0 42px;
+  margin: 0 0 0 0;
+  color: #FFFDF9;
+  font-family: Arial;
+  font-size: 4em;
+}
+.sub-title{
+  padding: 0 0 0 42px;
+  margin: 4px 0 0 0;
+  color: #FFFDF9;
+  font-family: Arial;
+}
+.section-title{
+  padding: 0 0 0 42px;
+  margin: 30px 0 2px 0;
+  text-decoration: underline;
+  font-family: Arial;
+  font-size: 32px;
+}
+.sub-section-title{
+  padding: 0 0 0 42px;
+  margin: 60px 0 0 0;
+  font-family: Arial;
+}
+.sub-section-title-center{
+  margin: 60px 0 0 0;
+  text-align: center;
+  font-family: Arial;
+}
+.sub-section-left-text{
+  padding: 0 0 0 42px;
+  font-family: Arial;
+}
+.sub-section-center-text{
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-family: Arial;
+}
+.section{
+  height: 758px;
+}
+#logo{
+  padding: 8px 0 0 42px;
+}
+#scroll-down-text{
+  text-align: center;
+  padding-top: 290px;
+  color: #FFFDF9;
+  font-family: Arial;
+}
+#nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+#section-1{
+  background-image: url(philadelphia-skyline.jpg);
+  background-position: center;
+}
+#section-2{
+  background-color: #ABB5C3;
+}
+#section-3{
+  background-color: #C3BBAB;
+}
+#section-4{
+  background-color: #ABB5C3;
+}
+#section-5{
+  background-color: #C3BBAB;
+}
+#hobbies{
+  width: 35%;
+}
+#movies{
+  width: 25%;
+}
+#food{
+  width: 25%;
+}
