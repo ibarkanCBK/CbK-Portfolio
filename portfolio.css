@@ -7,21 +7,23 @@ font-family: 'Oswald', sans-serif; */
 #DA4167
 #F4D35E */
 
-html{
+html {
   border: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif; 
 }
-body{
+body {
   border: 0;
   padding: 0;
   margin: 0;
 }
 
-/*div{
-  border-style: solid;
-  border-width: 2px;
-}*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 h1 {
   margin: 1px;
@@ -29,10 +31,10 @@ h1 {
   font-size: 2.2em;
 }
 h1,h2,h3 {
-  color:blue;
+  color:#DADAF5;
   font-family: 'Lalezar', cursive;
 }
-p{
+p {
   font-family: Arial;
 }
 a {
@@ -40,33 +42,35 @@ a {
 }
 
 /*The navigation classes are below*/
+
 .nav-item {
   display: inline;
-  padding-right: 4px;
+  padding-right: 14px;
 }
-.nav-link{
-  color: yellow;
+.nav-link {
+  color: #DADAF5;
   font-family: Arial;
 }
-.menu{
+.menu {
   padding: 8px 30px 8px 0;
 }
 
 /*The column classes are below*/
-.quarter-column{
+
+.quarter-column {
   width: 24.28%;
   display: inline-block;
   padding: 0;
   margin: 0;
   text-align: center;
 }
-.half-column{
-  width: 49%;
+.half-column {
+  width: 48%;
   display: inline-block;
   padding: 0;
   margin: 0;
 }
-.full-column{
+.full-column {
   width: 99.6%;
   display: inline-block;
   padding: 0;
@@ -74,48 +78,43 @@ a {
 }
 
 /* Title classes are below */
-
-.main-title{
+.main-title {
   padding: 250px 0 0 42px;
   margin: 0 0 0 0;
-  color: yellow;
+  color: #DADAF5;
   font-family: Arial;
   font-size: 4em;
 }
-.sub-title{
+.sub-title {
   padding: 0 0 0 42px;
   margin: 4px 0 0 0;
-  color: yellow;
+  color: #DADAF5;
   font-family: Arial;
 }
-.section-title{
-  padding: 0 0 0 42px;
-  margin: 30px 0 2px 0;
-  text-decoration: underline;
+.section-title {
+  padding: 30px 0 50px 0;
+  margin:  0 2px 0;
   font-family: Arial;
   font-size: 32px;
 }
-.sub-section-title{
+.sub-section-title {
   padding: 0 0 0 42px;
-  margin: 60px 0 0 0;
+  margin:  0 0 0;
   font-family: Arial;
 }
-.sub-section-title-center{
-  margin: 60px 0 0 0;
+.sub-section-title-center {
+  margin:  0 0 0;
   text-align: center;
   font-family: Arial;
 }
-.sub-section-left-text{
+.sub-section-left-text { 
   padding: 0 0 0 42px;
   font-family: Arial;
 }
-.sub-section-center-text{
+.sub-section-center-text {
   text-align: center;
   padding: 0 0 20px 0;
   font-family: Arial;
-}
-.section{
-  height: 868px;
 }
 
 /* Specific section styling */
@@ -124,7 +123,7 @@ a {
 }
 #scroll-down-text{
   text-align: center;
-  padding-top: 290px;
+  padding-top: 150px;
   color: #FFFDF9;
   font-family: Arial;
 }
@@ -132,57 +131,131 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: right;
+  text-align: right; 
 }
 
 /* Section one */
-
-
 #section-1 {
-  background-image: url(images/batman.jpg);
+  background-image: url(images/hexagonal-pattern_1051-833.jpg);
+  background-color:black;
   background-position:  100% 40%;
   background-repeat: no-repeat, repeat;
-  background-size: cover; 
+  background-size: cover;
+  height:100vh; 
 }
-#section-1 #navigation-menu {
-  /* background: linear-gradient(90deg, rgba(31,31,38,.5) 0%, rgba(5,5,233,.6) 50%, rgba(29,30,34,.5) 100%); */
+#navigation-menu {
+ background-color: black;
+ position:fixed;
+ width:100%;
+ z-index: 10000;
 }
 #section-1 .full-column {
   text-align: center;
-}
-#section-1 h4{
-  padding-bottom:70px;
+   padding-top:20vh; 
 }
 #section-1 .transparent-background {
-  height:100%;
-  
-  background: linear-gradient(90deg, rgba(31,31,38,.5) 0%, rgba(5,5,233,.6) 50%, rgba(29,30,34,.5) 100%);
+  height:100vh; 
+  background: linear-gradient(90deg, rgba(31,31,38,.9) 0%, rgba(5,5,233,.8) 50%, rgba(29,30,34,.9) 100%);
 }
-#section-1 p {
-  font-size:2.5em;
-  text-shadow: 0px 0px 5px rgb(18, 1, 24);
-  color:#edf2f9;
+.title {
+  font-size:4em;
+  text-shadow: 0px 0px 5px rgb(243, 240, 245);
+  color:#DADAF5;
   opacity:.9;
 }
-/* Section two */
-#section-2{
-  background-color:blueviolet;
+#section-1 h2 {
+  font-size: 2.5em;
+  color:#DADAF5;
 }
-#section-3{
-  background-color: #C3BBAB;
+
+/* Section two (About Me) */
+
+#section-2 {
+  background: black;
+  height:850px;
+  padding-bottom:50px;
 }
-#section-4{
-  background-color: #ABB5C3;
+#section-2 .half-column {
+  margin:0;
+  width:49%;
+  float:left;
+  height:200px;
+  padding:30px;
 }
-#section-5{
-  background-color: #C3BBAB;
+#section-2 p {
+  color:white;
+}
+#section-2 h2 {
+  font-size:2.5em;
+  padding-bottom:50px;
 }
 #hobbies{
-  width: 25%;
+  height:150px;
+  margin:0;
 }
 #movies{
-  width: 15%;
+  height:150px;
+  margin:0;
 }
 #food{
-  width: 15%;
+  height:150px;
+  margin:0;
 }
+
+/* Work Section */
+
+#section-3 {
+  background-color: black;
+  height:100vh;
+}
+#section-3 h2 {
+  font-size:2.5em;
+  padding-bottom:50px;
+}
+#section-3 img {
+  width:300px;
+  height:250px;
+}
+#section-3 p {
+ color:white;
+}
+
+/* Contact */
+
+#section-4{
+  background-image: url(images/hexagonal-pattern_1051-833.jpg);
+  background-position:  100% 40%;
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  height:800px;
+}
+#section-4 .transparent-background {
+  height:100%; 
+  background: linear-gradient(90deg, rgba(31,31,38,.9) 0%, rgba(5,5,233,.8) 50%, rgba(29,30,34,.9) 100%);
+}
+#section-4 h2 {
+  font-size:2.5em;
+  padding-bottom:50px;
+}
+#section-4 h2 {
+  font-size:2.5em;
+  padding-bottom:50px;
+}
+#section-4 li {
+  font-size:1.2em;
+  color:white;
+}
+
+/* Footer */
+
+#section-5{
+  text-align:center;
+  background-color: black;
+  padding-bottom:30px;
+}
+#section-5 i {
+  font-size:40px;
+  padding-left:20px;
+}
+
+
